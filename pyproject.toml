@@ -1,0 +1,31 @@
+[project]
+name = "data-stream-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Benny Wambua", email = "wambuabeny69@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aiokafka>=0.14.0",
+    "polars>=2.0.0",
+    "pyarrow>=26.0.0",
+    "pydantic>=2.14.1",
+]
+
+[project.scripts]
+data-stream-pipeline = "data_stream_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
