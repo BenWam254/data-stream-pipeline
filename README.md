@@ -1,5 +1,10 @@
 # data-stream-pipeline
 
+[![CI Pipeline](https://github.com/BenWam254/data-stream-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/BenWam254/data-stream-pipeline/actions)
+[![Python Version](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
+[![Package Manager](https://img.shields.io/badge/managed%20by-uv-purple.svg)](https://github.com/astral-sh/uv)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A high-throughput event-drive consumer pipeline engineered to consume raw JSON payloads from message brokers, apply zero-copy transformations, and persist partitioned Parquet data lakes.
 
 Built with **Polars** lazy frames for memory-efficient stream processing and **PyArrow** for columnar storage operations, `data-stream-pipeline` handles stream consumer efforts, batching windows, schema casting, and date/category partioning.
